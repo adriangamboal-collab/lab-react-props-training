@@ -25,7 +25,9 @@ function App() {
   );*/
   return (
     <div>
-    <Greetings lang="es">Ludwig</Greetings>
+    <Greetings
+     lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
   </div>
   );
 }
