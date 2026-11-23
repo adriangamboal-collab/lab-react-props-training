@@ -1,6 +1,6 @@
 import "./greetings.css" 
-function Greetings(params) {
-    console.log(params)
+function Greetings(props) {
+    console.log(props)
     const greeting = {
         es:"Hola",
         fr:"Bonjour",
@@ -8,7 +8,7 @@ function Greetings(params) {
         en: "Hello",
     }
 return <div className="Greetings">
-{greeting[params.lang]} {params.children}
+{greeting[props.lang]} {props.children}
 </div>;
 }
 

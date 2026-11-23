@@ -1,7 +1,8 @@
 import IdCard from "./componentes/id-card";
 import Greetings from "./componentes/greetings"
+import Random from "./componentes/random"
 function App() {
-  /*return (
+  return (
     <div>
       <IdCard
         lastName='Doe'
@@ -21,15 +22,16 @@ function App() {
         nationality='JAPAN'
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-</div>
-  );*/
-  return (
-    <div>
+       <div>
     <Greetings
      lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
   </div>
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/>
+</div>
   );
+ 
 }
 
 export default App;
