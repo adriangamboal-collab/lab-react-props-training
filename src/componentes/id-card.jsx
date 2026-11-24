@@ -1,5 +1,6 @@
 import "./id-card.css"
 function IdCard(props) {
+    console.log(props)
     return(
         <div className="IdCard">
         <img src={props.picture}/>
